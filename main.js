@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const splash = document.getElementById("splash");
     const logo = document.getElementById("splash-logo");
-    const mainContent = document.getElementById("main-content");
 
-    // Fade logo in
+    // Fade logo in slower
     setTimeout(() => {
         logo.style.opacity = "1";
-    }, 200);
+    }, 300); // small delay before fade-in
 
-    // Hold, then fade out splash
+    // Fade out splash later (give logo time to breathe)
     setTimeout(() => {
         splash.style.opacity = "0";
-    }, 1800);
+    }, 2600); // fade-out starts later
 
-    // Remove splash + reveal main content
+    // Remove splash after fade-out completes
     setTimeout(() => {
         splash.style.display = "none";
-        mainContent.style.opacity = "1";
-    }, 2800);
+    }, 4800); // matches the 2s fade-out
 });
 
 document.addEventListener("DOMContentLoaded", () => {
