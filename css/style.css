@@ -329,3 +329,9 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    .gallery-grid img:nth-child(9) {
+        display: none;
+    }
+}
+
