@@ -47,7 +47,7 @@ body {
 
 #announcement-bar img {
     width: 100%;
-    height: 80px; /* adjust this number to your preferred thinness */
+    height: 60px; /* adjust this number to your preferred thinness */
     object-fit: cover; /* keeps it looking clean */
     display: block;
 }
