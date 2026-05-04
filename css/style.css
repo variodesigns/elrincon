@@ -217,7 +217,7 @@ body {
 @media (max-width: 700px) {
     .hero-book-btn {
         width: 260px; /* match mobile logo width */
-        top: calc(52% + 160px); /* adjust this to move button up/down on mobile */
+        top: calc(50% + 100px); /* adjust this to move button up/down on mobile */
         font-size: 18px;
         padding: 12px 0;
     }
