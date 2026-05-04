@@ -5,17 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fade logo in slower
     setTimeout(() => {
         logo.style.opacity = "1";
-    }, 300); // small delay before fade-in
+    }, 300);
 
-    // Fade out splash later (give logo time to breathe)
+    // Fade out splash later
     setTimeout(() => {
         splash.style.opacity = "0";
-    }, 2600); // fade-out starts later
+    }, 2600);
 
     // Remove splash after fade-out completes
     setTimeout(() => {
         splash.style.display = "none";
-    }, 4800); // matches the 2s fade-out
+    }, 4800);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -43,6 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", () => {
         sideMenu.classList.toggle("open");
     });
+
+    // ✅ Close slide-out menu when a link is clicked
+    document.querySelectorAll("#side-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            sideMenu.classList.remove("open");
+        });
+    });
 });
 
 // HERO SLIDESHOW
@@ -50,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const desktopSlides = document.querySelectorAll(".slide.desktop");
     const mobileSlides = document.querySelectorAll(".slide.mobile");
 
-    // Decide which set of slides to use
     const slides = window.innerWidth <= 700 ? mobileSlides : desktopSlides;
 
     let index = 0;
@@ -62,4 +68,3 @@ document.addEventListener("DOMContentLoaded", () => {
         slides[index].classList.add("active");
     }, 2000);
 });
-
