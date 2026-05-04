@@ -335,3 +335,289 @@ body {
     }
 }
 
+/* MENUS SECTION */
+.menus-section {
+    background: #efebe0;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menus-section h1 {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.menus-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.menus-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-btn {
+    background: #efebe0;
+    border: 2px solid #000;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .menus-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* RESERVATIONS SECTION */
+.reservations-section {
+    background: #efebe0;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Marquee heading */
+.reservations-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.reservations-marquee span {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    animation: marquee-scroll 12s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Paragraph text */
+.reservations-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Placeholder booking widget box */
+.reservation-widget-placeholder {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    border: 3px dotted #000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .reservations-marquee span {
+        font-size: 28px;
+    }
+
+    .reservations-text {
+        font-size: 16px;
+    }
+
+    .reservation-widget-placeholder {
+        max-width: 90%;
+        padding: 40px 20px;
+        font-size: 18px;
+    }
+}
+
+/* CONTACT US SECTION */
+.contactus-section {
+    background: #efebe0;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contactus-section h1 {
+    font-size: 35px;
+    margin: 0 0 25px 0;
+    font-weight: 700;
+}
+
+.contactus-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* FORM */
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers everything including inputs */
+    gap: 18px;
+    width: 100%;
+}
+
+.contactus-form input,
+.contactus-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    font-size: 18px;
+    outline: none;
+}
+
+.contactus-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* BUTTON */
+.contactus-btn {
+    background: #efebe0;
+    border: 2px solid #000;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contactus-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .contactus-form input,
+    .contactus-form textarea {
+        max-width: 90%; /* keeps inputs centred with breathing room */
+        font-size: 16px;
+    }
+
+    .contactus-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+.site-footer {
+    background: #efebe0;
+    padding: 60px 20px;
+    border-top: 1px solid #000;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.footer-column p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Center column */
+.footer-center {
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Social icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.social-link svg {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.social-link:hover svg {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+/* Reservation link */
+.footer-reservation-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    color: #000;
+}
+
+.footer-reservation-link:hover {
+    opacity: 0.7;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
