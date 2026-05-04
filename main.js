@@ -44,3 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
         sideMenu.classList.toggle("open");
     });
 });
+
+// HERO SLIDESHOW
+document.addEventListener("DOMContentLoaded", () => {
+    const desktopSlides = document.querySelectorAll(".slide.desktop");
+    const mobileSlides = document.querySelectorAll(".slide.mobile");
+
+    // Decide which set of slides to use
+    const slides = window.innerWidth <= 700 ? mobileSlides : desktopSlides;
+
+    let index = 0;
+    slides[index].classList.add("active");
+
+    setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }, 2000);
+});
+
