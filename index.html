@@ -5,31 +5,32 @@
     <title>El Rincon Restaurant - Spanish and Mediterranean Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <!-- FAVICONS + PWA -->
-<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
 
-<link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 
-<link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="manifest" href="favicons/site.webmanifest">
 
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#000000">
-
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#000000">
 </head>
+
 <body>
 
     <!-- Splash Screen -->
@@ -37,8 +38,8 @@
         <img src="images/logo.jpg" alt="Logo" id="splash-logo">
     </div>
 
-    <!-- Announcement Bar (banner image) -->
-    <div id="announcement-bar">
+    <!-- Announcement Bar -->
+    <div id="announcement-bar-top">
         <img src="images/banner.jpg" alt="Banner">
     </div>
 
@@ -53,228 +54,231 @@
         </div>
     </nav>
 
-<div id="nav-divider"></div>
+    <div id="nav-divider"></div>
 
     <!-- Slide-out Menu -->
     <div id="side-menu">
-        <a href="#">Home</a>
-        <a href="#">Our Story</a>
-        <a href="#">Gallery</a>
-        <a href="#">Menus</a>
-        <a href="#">Make a Booking</a>
-        <a href="#">Contact Us</a>
+        <a href="#hero">Home</a>
+        <a href="#about-section">Our Story</a>
+        <a href="#gallery-section">Gallery</a>
+        <a href="#menus-section">Menus</a>
+        <a href="#reservations-section">Make a Booking</a>
+        <a href="#contact-section">Contact Us</a>
     </div>
 
-<!-- HERO SLIDESHOW -->
-<div class="hero-slideshow">
+    <!-- HERO SLIDESHOW -->
+    <div class="hero-slideshow" id="hero">
 
-    <!-- Desktop slides -->
-    <div class="slide desktop" style="background-image: url('images/desktophero1.jpg');"></div>
-    <div class="slide desktop" style="background-image: url('images/desktophero2.jpg');"></div>
+        <!-- Desktop slides -->
+        <div class="slide desktop" style="background-image: url('images/desktophero1.jpg');"></div>
+        <div class="slide desktop" style="background-image: url('images/desktophero2.jpg');"></div>
 
-    <!-- Mobile slides -->
-    <div class="slide mobile" style="background-image: url('images/mobilehero1.jpg');"></div>
-    <div class="slide mobile" style="background-image: url('images/mobilehero2.jpg');"></div>
+        <!-- Mobile slides -->
+        <div class="slide mobile" style="background-image: url('images/mobilehero1.jpg');"></div>
+        <div class="slide mobile" style="background-image: url('images/mobilehero2.jpg');"></div>
 
-    <img src="images/logo.jpg" class="hero-centered-logo" alt="El Rincon Logo">
+        <img src="images/logo.jpg" class="hero-centered-logo" alt="El Rincon Logo">
 
-    <a href="#booking" class="hero-book-btn">Book a table</a>
+        <a href="#reservations-section" class="hero-book-btn">Book a table</a>
+    </div>
 
-</div>
-
- <!-- Announcement Bar (banner image) -->
+    <!-- Announcement Bar -->
     <div id="announcement-bar">
         <img src="images/banner.jpg" alt="Banner">
     </div>
 
-<section class="our-story">
-    <h1>Our Story</h1>
+    <!-- OUR STORY -->
+    <section class="our-story" id="about-section">
+        <h1>Our Story</h1>
 
-    <h2><i>"Spanish and mediterranean dishes inspired by tradition"</i></h2>
+        <h2><i>"Spanish and mediterranean dishes inspired by tradition"</i></h2>
 
-    <p>
-        El Rincón means “the hidden corner”, a place where people come together to enjoy good food, warmth, and relaxed Mediterranean hospitality.
-    </p>
+        <p>
+            El Rincón means “the hidden corner”, a place where people come together to enjoy good food, warmth, and relaxed Mediterranean hospitality.
+        </p>
 
-    <p>
-        We are a <b>family-run Spanish and Mediterranean restaurant in Sunningdale, near Ascot</b>, serving authentic dishes inspired by Spain and the wider Mediterranean.
-    </p>
+        <p>
+            We are a <b>family-run Spanish and Mediterranean restaurant in Sunningdale, near Ascot</b>, serving authentic dishes inspired by Spain and the wider Mediterranean.
+        </p>
 
-    <p>
-        Our food is rooted in tradition, driven by flavour, and made using quality ingredients and time-honoured techniques. From classic Spanish favourites to Mediterranean staples, every dish reflects care, consistency, and a genuine love of cooking.
-    </p>
-</section>
+        <p>
+            Our food is rooted in tradition, driven by flavour, and made using quality ingredients and time-honoured techniques. From classic Spanish favourites to Mediterranean staples, every dish reflects care, consistency, and a genuine love of cooking.
+        </p>
+    </section>
 
-<!-- Announcement Bar (banner image) -->
+    <!-- Announcement Bar -->
     <div id="announcement-bar">
         <img src="images/banner.jpg" alt="Banner">
     </div>
 
-<section class="gallery-section">
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery-section">
 
-    <div class="gallery-buttons">
-        <button class="gallery-btn active">All</button>
-        <button class="gallery-btn">Restaurant</button>
-        <button class="gallery-btn">Food</button>
-    </div>
-
-    <div class="gallery-grid">
-        <img src="images/about1.webp" alt="">
-        <img src="images/about2.webp" alt="">
-        <img src="images/about3.webp" alt="">
-        <img src="images/about4.webp" alt="">
-        <img src="images/about5.webp" alt="">
-        <img src="images/about6.webp" alt="">
-        <img src="images/about7.webp" alt="">
-        <img src="images/about8.webp" alt="">
-        <img src="images/about9.webp" alt="">
-    </div>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <img id="lightbox-img" src="" alt="">
-    </div>
-
-</section>
-
-<!-- Announcement Bar (banner image) -->
-    <div id="announcement-bar">
-        <img src="images/banner.jpg" alt="Banner">
-    </div>
-
-<section class="menus-section">
-    <h1>Our Menus</h1>
-    <p class="menus-subtitle">Check out our Food and Drink Menus below</p>
-
-    <div class="menus-buttons">
-        <a href="#" class="menu-btn">Drinks Menu</a>
-        <a href="#" class="menu-btn">Main Menu</a>
-    </div>
-</section>
-
-<!-- Announcement Bar (banner image) -->
-    <div id="announcement-bar">
-        <img src="images/banner.jpg" alt="Banner">
-    </div>
-
-<section class="reservations-section">
-    
-    <div class="reservations-marquee">
-        <span>Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • </span>
-    </div>
-
-    <p class="reservations-text">
-        Book a table using the form below, for group bookings of over six people, 
-        special occasions, or personalised requests, please give us a call.
-    </p>
-
-    <div class="reservation-widget-placeholder">
-        Booking Widget Placeholder
-    </div>
-
-</section>
-
-<!-- Announcement Bar (banner image) -->
-    <div id="announcement-bar">
-        <img src="images/banner.jpg" alt="Banner">
-    </div>
-
-<section class="contactus-section">
-    <h1>Contact Us</h1>
-
-    <p class="contactus-text">
-        Use the form below to send us a message. Please bare with us during busy periods.
-    </p>
-
-    <form class="contactus-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Contact Number" required>
-        <textarea placeholder="Your Message" required></textarea>
-
-        <button type="submit" class="contactus-btn">Send Message</button>
-    </form>
-</section>
-
-<!-- Announcement Bar (banner image) -->
-    <div id="announcement-bar">
-        <img src="images/banner.jpg" alt="Banner">
-    </div>
-
-<footer class="site-footer">
-    <div class="footer-inner">
-
-        <!-- LEFT: CONTACT -->
-        <div class="footer-column">
-            <h3>Contact</h3>
-            <p>
-                9 Station Parade,<br>
-                Sunningdale, Ascot, SL5 0EP
-            </p>
-            <p>
-                hello@elrinconrestaurant.co.uk<br>
-                01344 873 333
-            </p>
+        <div class="gallery-buttons">
+            <button class="gallery-btn active">All</button>
+            <button class="gallery-btn">Restaurant</button>
+            <button class="gallery-btn">Food</button>
         </div>
 
-        <!-- CENTER: LOGO + SOCIAL -->
-        <div class="footer-column footer-center">
-            <img src="images/logo.jpg" alt="El Rincón Logo" class="footer-logo">
-            <p class="footer-tagline">SPANISH AND MEDITERRANEAN</p>
+        <div class="gallery-grid">
+            <img src="images/about1.webp" alt="">
+            <img src="images/about2.webp" alt="">
+            <img src="images/about3.webp" alt="">
+            <img src="images/about4.webp" alt="">
+            <img src="images/about5.webp" alt="">
+            <img src="images/about6.webp" alt="">
+            <img src="images/about7.webp" alt="">
+            <img src="images/about8.webp" alt="">
+            <img src="images/about9.webp" alt="">
+        </div>
 
-            <div class="footer-social">
-                <!-- Facebook SVG -->
-                <a href="#" aria-label="Facebook" class="social-link">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="11" stroke="#000" stroke-width="2"/>
-                        <path d="M13.5 8H15V6H13.5C11.57 6 10 7.57 10 9.5V11H8V13H10V18H12V13H14V11H12V9.5C12 8.95 12.45 8.5 13 8.5H13.5V8Z" fill="#000"/>
-                    </svg>
-                </a>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <img id="lightbox-img" src="" alt="">
+        </div>
 
-                <!-- Instagram SVG -->
-                <a href="#" aria-label="Instagram" class="social-link">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                        <rect x="4" y="4" width="16" height="16" rx="4" stroke="#000" stroke-width="2"/>
-                        <circle cx="12" cy="12" r="4" stroke="#000" stroke-width="2"/>
-                        <circle cx="17" cy="7" r="1" fill="#000"/>
-                    </svg>
-                </a>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar">
+        <img src="images/banner.jpg" alt="Banner">
+    </div>
+
+    <!-- MENUS -->
+    <section class="menus-section" id="menus-section">
+        <h1>Our Menus</h1>
+        <p class="menus-subtitle">Check out our Food and Drink Menus below</p>
+
+        <div class="menus-buttons">
+            <a href="#" class="menu-btn">Drinks Menu</a>
+            <a href="#" class="menu-btn">Main Menu</a>
+        </div>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar">
+        <img src="images/banner.jpg" alt="Banner">
+    </div>
+
+    <!-- RESERVATIONS -->
+    <section class="reservations-section" id="reservations-section">
+        
+        <div class="reservations-marquee">
+            <span>Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • Make a Reservation • </span>
+        </div>
+
+        <p class="reservations-text">
+            Book a table using the form below, for group bookings of over six people, 
+            special occasions, or personalised requests, please give us a call.
+        </p>
+
+        <div class="reservation-widget-placeholder">
+            Booking Widget Placeholder
+        </div>
+
+    </section>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar">
+        <img src="images/banner.jpg" alt="Banner">
+    </div>
+
+    <!-- CONTACT -->
+    <section class="contactus-section" id="contact-section">
+        <h1>Contact Us</h1>
+
+        <p class="contactus-text">
+            Use the form below to send us a message. Please bare with us during busy periods.
+        </p>
+
+        <form class="contactus-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Contact Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="contactus-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar">
+        <img src="images/banner.jpg" alt="Banner">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <!-- LEFT: CONTACT -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>
+                    9 Station Parade,<br>
+                    Sunningdale, Ascot, SL5 0EP
+                </p>
+                <p>
+                    hello@elrinconrestaurant.co.uk<br>
+                    01344 873 333
+                </p>
             </div>
+
+            <!-- CENTER: LOGO + SOCIAL -->
+            <div class="footer-column footer-center">
+                <img src="images/logo.jpg" alt="El Rincón Logo" class="footer-logo">
+                <p class="footer-tagline">SPANISH AND MEDITERRANEAN</p>
+
+                <div class="footer-social">
+                    <!-- Facebook SVG -->
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="11" stroke="#000" stroke-width="2"/>
+                            <path d="M13.5 8H15V6H13.5C11.57 6 10 7.57 10 9.5V11H8V13H10V18H12V13H14V11H12V9.5C12 8.95 12.45 8.5 13 8.5H13.5V8Z" fill="#000"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram SVG -->
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="4" width="16" height="16" rx="4" stroke="#000" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4" stroke="#000" stroke-width="2"/>
+                            <circle cx="17" cy="7" r="1" fill="#000"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT: HOURS -->
+            <div class="footer-column">
+                <h3>Hours</h3>
+                <p>
+                    Mon–Thu 12:00–22:00<br>
+                    Fri–Sat 12:00–23:00<br>
+                    Sun 12:00–20:00
+                </p>
+                <a href="#reservations-section" class="footer-reservation-link">Make a Reservation</a>
+            </div>
+
         </div>
+    </footer>
 
-        <!-- RIGHT: HOURS -->
-        <div class="footer-column">
-            <h3>Hours</h3>
-            <p>
-                Mon–Thu 12:00–22:00<br>
-                Fri–Sat 12:00–23:00<br>
-                Sun 12:00–20:00
-            </p>
-            <a href="#booking" class="footer-reservation-link">Make a Reservation</a>
-        </div>
+    <!-- LIGHTBOX SCRIPT -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
 
-    </div>
-</footer>
-
-
-
-<script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    document.querySelectorAll('.gallery-grid img').forEach(img => {
-        img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightbox.style.display = 'flex';
+        document.querySelectorAll('.gallery-grid img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+            });
         });
-    });
 
-    lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-</script>
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    </script>
 
     <script src="main.js"></script>
 </body>
 </html>
-
