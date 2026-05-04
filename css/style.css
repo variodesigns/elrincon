@@ -178,3 +178,44 @@ body {
     }
 }
 
+/* HERO OVERLAY BOX */
+.hero-overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(239, 235, 224, 0.88); /* slightly stronger presence */
+    padding: 50px 70px; /* bigger, more imposing */
+    text-align: center;
+    border-radius: 12px;
+    z-index: 5;
+    max-width: 70%; /* wider */
+}
+
+/* Typography upgrades */
+.hero-overlay-box h1 {
+    margin: 0 0 25px 0;
+    font-size: 48px; /* bigger heading */
+    font-weight: bold;
+}
+
+.hero-overlay-box p {
+    margin: 14px 0;
+    font-size: 22px; /* bigger text */
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .hero-overlay-box {
+        padding: 30px 35px;
+        max-width: 90%;
+    }
+
+    .hero-overlay-box h1 {
+        font-size: 32px;
+    }
+
+    .hero-overlay-box p {
+        font-size: 18px;
+    }
+}
