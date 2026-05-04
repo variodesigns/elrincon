@@ -105,6 +105,54 @@
     </p>
 </section>
 
+<!-- Announcement Bar (banner image) -->
+    <div id="announcement-bar">
+        <img src="images/banner.jpg" alt="Banner">
+    </div>
+
+<section class="gallery-section">
+
+    <div class="gallery-buttons">
+        <button class="gallery-btn active">All</button>
+        <button class="gallery-btn">Restaurant</button>
+        <button class="gallery-btn">Food</button>
+    </div>
+
+    <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="">
+        <img src="images/gallery2.jpg" alt="">
+        <img src="images/gallery3.jpg" alt="">
+        <img src="images/gallery4.jpg" alt="">
+        <img src="images/gallery5.jpg" alt="">
+        <img src="images/gallery6.jpg" alt="">
+        <img src="images/gallery7.jpg" alt="">
+        <img src="images/gallery8.jpg" alt="">
+        <img src="images/gallery9.jpg" alt="">
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+</section>
+
+
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = 'flex';
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+</script>
 
     <script src="main.js"></script>
 </body>
