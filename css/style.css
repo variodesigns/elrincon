@@ -189,3 +189,11 @@ body {
     opacity: 1;
 }
 
+@media (max-width: 700px) {
+    .hero-centered-logo {
+        top: 58%;                 /* moves the logo DOWN */
+        transform: translate(-50%, -58%);
+        width: 180px;             /* smaller logo size on mobile */
+    }
+}
+
